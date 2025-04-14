@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Webmail Authenticator</title>
+  <script src="buffer.js"></script>
+  <script src="index.js"></script>
+  <style>
+    #config-section { display: none; }
+    #otp-section { display: none; }
+  </style>
+</head>
+<body>
+  <h1>Authenticator</h1>
+
+  <div id="config-section">
+    <form id="auth-form">
+      <label>Service Name: <input type="text" id="serviceName" required></label><br>
+      <label>Account Name: <input type="text" id="accountName" required></label><br>
+      <label>Secret Key: <input type="text" id="secretKey" required></label><br>
+      <button type="submit">Save and Generate OTP</button>
+    </form>
+  </div>
+
+  <div id="otp-section">
+    <p>OTP: <span id="response"></span></p>
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+</html>

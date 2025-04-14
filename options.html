@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Webmail Authenticator Settings</title>
+  <style>
+    body { font-family: sans-serif; padding: 10px; }
+    label { display: block; margin-top: 10px; }
+  </style>
+</head>
+<body>
+  <h2>Manage Your OTP Configuration</h2>
+  <form id="options-form">
+    <label>Service Name: <input type="text" id="serviceName"></label>
+    <label>Account Name: <input type="text" id="accountName"></label>
+    <label>Secret Key: <input type="text" id="secretKey"></label>
+    <button type="submit">Save</button>
+    <button type="button" id="reset">Reset</button>
+  </form>
+
+  <script src="options.js"></script>
+</body>
+</html>
